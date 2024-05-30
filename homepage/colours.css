@@ -1,0 +1,17 @@
+body {
+    background-color: black;
+    color: #FFFFFF;
+}
+
+header {
+    background-color: #000000;
+}
+
+.searchbar {
+    background-color: #FF0000;
+}
+
+.searchbar input {
+    background-color: #FFFFFF;
+    color: #000000;
+}
