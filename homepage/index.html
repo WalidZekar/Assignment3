@@ -1,13 +1,10 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>homepage</title>
-    <link rel="stylesheet" href="layout.css">
-    <link rel="stylesheet" href="typography.css">
-    <link rel="stylesheet" href="colours.css">
+    <link rel="stylesheet" href="stylesheet.css">
 </head>
 <body> 
     <header>
@@ -16,19 +13,29 @@
       </div>
 
       <div class="searchbar">
-        <button class="searchbutton">
-          <img src="Group.svg" alt="Search Icon">
-        </button>
-        <input type="text" placeholder="Search">
-        <button class="filter">
-          <img src="Vector.svg" alt="Filter Icon"> 
-      </button> 
+        <input type="text" class="searchbox" placeholder="Search">
+        <button class="searchbutton" > <img src="Group.svg"> </button>
       </div>
 
       <nav>
         <ul>
-            <li><a href="#"><img src="Group 5.svg" alt="Dropdown Menu Icon" class="Dropdownmenu"></a></li>
-            <li><a href="#"><img src="icons.svg" alt="Profile Icon" class="Porfile"></a></li>
+          <div class="dropdown">
+           
+            <button class="dropdownbutton"><img src="Group 5.svg" alt="Dropdown Menu Icon" class="Dropdownmenu"></button>
+            <ul class="dropdownoptions">
+              <li><a href="#">Nintendo Switch</a></li>
+              <li><a href="#">Playstation 5</a></li>
+              <li><a href="#">PLaystation 4</a></li>
+              <li><a href="#">PLaystation 3</a></li>
+              <li><a href="#">PLaystation VR</a></li>
+              <li><a href="#">Xbox One X</a></li>
+              <li><a href="#">Xbox One</a></li>
+              <li><a href="#">Pokemon</a></li>
+              <li><a href="#">Yugioh</a></li>
+            </ul>
+
+          </div>
+            <li><a href="#"><img src="Group (1).png" alt="Profile Icon" class="Porfile"></a></li>
             <li><a href="#"><img src="Group (2).svg" alt="Cart Icon" class="Cart"></a></li>
         </ul>
       </nav>
@@ -37,5 +44,82 @@
         <div class="advert">
             <img src="image 18.jpg" alt="Assassin's Creed Advertisement">
         </div>
+
+        <div class="products">
+          <h2>Products</h2>
+          <div class="brands">
+            <div class="circle">
+
+             <img src="Group 27.svg" alt="playstationlogo">
+            </div>
+
+            <div class="circle">
+
+              <img src="image 2.svg" alt="xboxlogo">
+             </div>
+
+             <div class="circle">
+
+              <img src="image 3.svg" alt="nintendologo">
+             </div>
+
+             <div class="circle">
+
+              <img src="image 4.svg" alt="pokemonlogo">
+             </div>
+
+          </div>
+      
+        </div>
+
+        <div class="featuredproducts">
+          <h2>Featured Products</h2>
+          <div class="productslist">
+          <div class="product">
+            <img src="image 6 (2).jpg" alt="The Legend of Heroes Trails Of Cold Steel II / PS4 / Playstation 4">
+            <p class="title">The Legend of Heroes Trails Of Cold Steel II / PS4 / Playstation 4</p>
+            <div class="price">$39.00 AUD</div>
+        </div>
+        <div class="product">
+            <img src="image 10.jpg" alt="The Legend of Heroes Trails Of Cold Steel / PS4 / Playstation 4">
+            <p class="title">The Legend of Heroes Trails Of Cold Steel / PS4 / Playstation 4</p>
+            <div class="price">$44.00 AUD</div>
+        </div>
+        <div class="product">
+            <img src="image 11.jpg" alt="The Legend of Heroes: Trails of Cold Steel III / PS4">
+            <p class="title">The Legend of Heroes: Trails of Cold Steel III / PS4</p>
+            <div class="price">$49.00 AUD</div>
+        </div>
+        </div>
+        </div>
     </main>
+    <div class="footer">
+      <div class="column1">
+        <h2>Useful Links</h2>
+        <a href="#">About Us</a>
+        <a href="#">Delivery</a>
+        <a href="#">Return</a>
+        <a href="#">Terms of Service</a>
+        <a href="#">Site Map</a>
+        <a href="#">Store Location</a>
+        <a href="#">Local Pickup</a>
+        <a href="#">Refund Policy</a>
+        <a href="#">Contact Us</a>
+      </div>
+       
+      
+      <div class="column2">
+        <h2>Stay In The Loop</h2>
+        <form>
+          <input type="email" placeholder="Enter Your Email Address" required>
+          <br>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+      <div class="column3">
+        <h2>Contact</h2>
+        <p>Got a Question? Call Us<br>0429783792<br>Mon-Sat 9am-6pm AEST</p>
+      </div>
+    </div>
 </body>
+</html>
