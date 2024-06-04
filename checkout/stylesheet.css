@@ -359,15 +359,6 @@ form button {
     cursor: pointer;
 }
 
-/* Media Queries for Mobile */
-@media (max-width: 768px) {
-    .details {
-        flex-direction: column;
-    }
 
-    .personaldetails, .deliverydetails, .paymentmethods {
-        min-width: 100%;
-    }
-}
 
 
