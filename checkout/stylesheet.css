@@ -1,0 +1,373 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    color: #fff;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #000000;
+}
+
+.logo img {
+    height: 65px;
+    width: auto;
+}
+
+.searchbar {
+    width: 600px;
+    display: flex;
+}
+
+.searchbox {
+    width: 70%;
+    height: 40px;
+    padding: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border: 1px solid #ff0000;
+    text-transform: capitalize;
+    background: none;
+    color: #ff0000;
+    outline: none;
+    font-size: large;
+}
+
+.searchbutton {
+    padding: 10px 20px;
+    border: none;
+    width: 10%;
+    height: 62px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: #ff0000;
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 15px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+
+
+
+nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: flex;
+    align-items: center;
+}
+
+
+.qty_label {
+    position: absolute;
+    top: 12px;
+    right: 103px;
+    background-color: #ff0000;
+    color: #fff;
+    padding: 02px 7px;
+    border-radius: 10px;
+    display: none;
+}
+
+.cart_box {
+    position: absolute;
+    top: 80px;
+    right: 0;
+    background-color: #383838;
+    width: 380px;
+    padding: 1.5em;
+    box-shadow: 0 05px 10px red;
+    border-radius: 05px;
+    display: none;
+}
+
+.cart_box .box_header {
+    font-size: 2rem;
+    font-weight: 600;
+    position: relative;
+}
+
+.cart_box .box_header::after {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: -30px;
+    width: 100%;
+    height: 3px;
+    background-color: #575757;
+}
+
+.pro_content {
+    margin-top: 6rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    display: none;
+}
+
+.pro_content > img {
+    border-radius: 10px;
+    width: 60px;
+}
+
+.totalprice {
+    font-weight: 600;
+}
+
+.cart_empty {
+    text-align: center;
+    font-weight: 600;
+    padding: 3rem 2rem;
+}
+
+.cart_empty p{
+    padding: 3rem 0;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdownbutton {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdownoptions {
+    display: none;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    position: absolute;
+    background-color: #383838;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 10px;
+}
+
+.dropdownoptions li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.dropdownoptions li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 16px;
+    display: block;
+}
+
+.dropdownoptions li a:hover {
+    background-color: #575757;
+}
+
+.dropdown:hover .dropdownoptions {
+    display: block;
+}
+.main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.checkoutpage {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.checkout {
+    text-align: left;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.ordersummary{
+    background-color: #1e1e1e;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.ordersummary h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.orderlist {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.order {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.order img {
+    width: 80px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.productdetails {
+    flex-grow: 1;
+}
+
+.productdetails {
+    margin: 0;
+}
+
+.details {
+    display: flex;
+    gap: 20px;
+    flex: 1;
+}
+
+
+.personaldetails, .deliverydetails {
+    flex: 1;
+    min-width: 300px;
+    background-color: #1e1e1e;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.paymentmethods {
+    flex-basis: 750px;
+    margin-top: 20px;
+}
+
+
+input[type="text"], input[type="tel"], input[type="email"], input[type="number"] {
+    width: 95%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 4px;
+    border: 1px solid #ffffff;
+    background-color: #ffffff;
+    color: #fff;
+}
+
+.paymentmethods label {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    cursor: pointer;
+    background-color: #333;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ffffff;
+    transition: background-color 0.3s;
+}
+
+.paymentmethods label:hover {
+    background-color: #444;
+}
+
+.paymentmethods input[type="radio"] {
+    margin-right: 10px;
+    display: none;
+}
+
+.paymentmethods img {
+    vertical-align: middle;
+    margin-left: 10px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #ff0000;
+    color: #fff;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1.2em;
+    text-align: center;
+    text-decoration: none;
+    align-self: flex-end;
+    margin-top: 20px;
+}
+
+.footer {
+    margin-top: 50px;
+    padding: 10px 15%;
+    background: #383838;
+    color: #efefef;
+    display: flex;
+}
+
+
+.footer div {
+    text-align: center;
+}
+
+.column2 {
+    flex-grow: 2;
+}
+
+.footer div h3 {
+    font-weight: 300;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+
+.column1 a {
+    display: block;
+    text-decoration: none;
+    color: #efefef;
+    margin-bottom: 10px;
+}
+
+form input {
+    width: 400px;
+    height: 45px;
+    border-radius: 4px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    outline: none;
+    border: none;
+}
+
+form button {
+    background: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+    border-radius: 30px;
+    padding: 10px 30px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+/* Media Queries for Mobile */
+@media (max-width: 768px) {
+    .details {
+        flex-direction: column;
+    }
+
+    .personaldetails, .deliverydetails, .paymentmethods {
+        min-width: 100%;
+    }
+}
+
+
